@@ -1,0 +1,40 @@
+body { 
+	background-color:#FDFFE1;
+	color:#645951;
+	font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;
+	font-size:14px;
+	line-height:1.5;
+	}
+	
+#sortable1, #sortable2, #droppable { 
+	list-style-type: none; margin: 0; padding: 0; float: left;
+	}
+	
+#sortable1 li, #sortable2 li { 
+	margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; width: 80%; line-height: 1.8em;
+	}
+#droppable {
+	width: 80%; height: 150px; padding: 0.5em; float: left; border:1px solid #FED22F; background-color: #fbfbfb;
+	}
+	
+.item {
+	background-color: #FFE45C;
+	border:1px solid #FED22F;
+	color:#363636;
+	cursor: move;
+}
+
+.separator {
+	font-size: 70%;
+	text-transform: uppercase;
+	text-decoration: underline;
+	cursor: move;
+}
+		
+p {
+	font: 16px/120px sans-serif;
+	color: #000;
+	text-align: center;
+	border: 1px solid #000;
+	margin: 0 0 20px 0;
+}
