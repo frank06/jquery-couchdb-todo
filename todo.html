@@ -103,9 +103,9 @@
 		<div class="column grid_5">
 			<h2>Backlog</h2>
 			<div>	
-				<form onsubmit="$('ul#sortable2').append('<li class=item>' + $('#task').val() + '</li>'); update(docId); $('#task').val('')">
+				<form>
 					<input id="task" type="text"></input>
-					<input type="submit" value="Add!"></input>
+					<input type="submit" value="Add!" onclick="$('ul#sortable2').append('<li class=item>' + $('#task').val() + '</li>'); update(docId); $('#task').val('')"></input>
 				</form>
 
 			</div>
