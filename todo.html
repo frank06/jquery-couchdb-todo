@@ -36,9 +36,6 @@
 			$.each(doc.backlog, function(i,item){
 				$("ul#sortable2").append(openTag + item + closeTag);
 			});
-			
-			$("ul#sortable2").append("<li class='separator'>Later</li>");
-
 
 		       }
 		}, {async:false});
@@ -103,9 +100,9 @@
 		<div class="column grid_5">
 			<h2>Backlog</h2>
 			<div>	
-				<form>
+				<form onsubmit="$('ul#sortable2').append('<li class=item>' + $('#task').val() + '</li>'); update(docId); $('#task').val(''); return false">
 					<input id="task" type="text"></input>
-					<input type="submit" value="Add!" onclick="$('ul#sortable2').append('<li class=item>' + $('#task').val() + '</li>'); update(docId); $('#task').val('')"></input>
+					<input type="submit" value="Add!"></input>
 				</form>
 
 			</div>
